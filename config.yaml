@@ -1,0 +1,22 @@
+model_list:
+  - model_name: gemini-3-pro-image-preview
+    litellm_params:
+      model: vertex_ai/gemini-3-pro-image-preview
+      vertex_project: project-fa251a09-d322-4b9b-86a
+      vertex_location: us-central1
+  - model_name: gemini-2.0-flash-exp
+    litellm_params:
+      model: vertex_ai/gemini-2.0-flash-exp
+      vertex_project: project-fa251a09-d322-4b9b-86a
+      vertex_location: us-central1
+  - model_name: gemini-2.0-flash-preview-image-generation
+    litellm_params:
+      model: vertex_ai/gemini-2.0-flash-preview-image-generation
+      vertex_project: project-fa251a09-d322-4b9b-86a
+      vertex_location: us-central1
+
+general_settings:
+  master_key: os.environ/LITELLM_MASTER_KEY
+
+litellm_settings:
+  drop_params: true
